@@ -1,0 +1,18 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# An example controller showing a sample home page
+GET     /                           				controllers.FrontendController.index()
+GET     /welcome                           				controllers.FrontendController.welcome()
+
+# TEAMS
+GET     /premierleague/team/teams                       	controllers.team.TeamController.getTeams(orderBy:String ?= "")
+
+# MATCH 
+GET		/premierleague/match/random 				controllers.matches.MatchController.generateRandomMatch()
+GET 	/premierleague/match/matches				controllers.matches.MatchController.findMatchesByDate(date: String ?= "")
+GET 	/premierleague/match/matches/order-by-date		controllers.matches.MatchController.getMatchesOrderAscByDate()
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /*file                      				controllers.FrontendController.assetOrDefault(file)

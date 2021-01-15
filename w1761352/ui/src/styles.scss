@@ -1,0 +1,87 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+// margin padding scss
+
+@for $i from 0 through 100 {
+  .#{"m"}#{$i} {
+    margin: #{$i}#{"px"} !important;
+  }
+
+  .#{"mr"}#{$i} {
+    margin-right: #{$i}#{"px"} !important;
+  }
+
+  .#{"ml"}#{$i} {
+    margin-left: #{$i}#{"px"} !important;
+  }
+
+  .#{"mb"}#{$i} {
+    margin-bottom: #{$i}#{"px"} !important;
+  }
+
+  .#{"mt"}#{$i} {
+    margin-top: #{$i}#{"px"} !important;
+  }
+
+  .#{"mx"}#{$i} {
+    margin-left: #{$i}#{"px"} !important;
+    margin-right: #{$i}#{"px"} !important;
+  }
+
+  .#{"my"}#{$i} {
+    margin-top: #{$i}#{"px"} !important;
+    margin-bottom: #{$i}#{"px"} !important;
+  }
+
+  .#{"p"}#{$i} {
+    padding: #{$i}#{"px"} !important;
+  }
+
+  .#{"pr"}#{$i} {
+    padding-right: #{$i}#{"px"} !important;
+  }
+
+  .#{"pl"}#{$i} {
+    padding-left: #{$i}#{"px"} !important;
+  }
+
+  .#{"pb"}#{$i} {
+    padding-bottom: #{$i}#{"px"} !important;
+  }
+
+  .#{"pt"}#{$i} {
+    padding-top: #{$i}#{"px"} !important;
+  }
+
+  .#{"px"}#{$i} {
+    padding-left: #{$i}#{"px"} !important;
+    padding-right: #{$i}#{"px"} !important;
+  }
+
+  .#{"py"}#{$i} {
+    padding-top: #{$i}#{"px"} !important;
+    padding-bottom: #{$i}#{"px"} !important;
+  }
+}
+
+@for $i from 0 through 100 {
+  .#{"s"}#{$i} {
+    font-size: #{$i}#{"px"} !important;
+  }
+}
+
+
+.img-wrapper {
+  height: 30px;
+  width: 50px;
+  object-fit: cover;
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
